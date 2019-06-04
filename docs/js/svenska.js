@@ -1,18 +1,23 @@
 let svenska = {
     "action": [
-        "sparkar"
+        "sparkar",
+        "kramar"
     ],
     "adjective": [
-        "en arg"
+        "en arg",
+        "en gosig"
     ],
     "location": [
-        "i soffan"
+        "i soffan",
+        "på skolan"
     ],
     "object": [
-        "en get"
+        "get",
+        "monster"
     ],
     "object2": [
-        "en orm"
+        "en orm",
+        "en elev"
     ],
     "structure": [
         "adjective,object,action,object2,location"

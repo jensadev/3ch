@@ -8,8 +8,10 @@ buttons.forEach(element => {
     btn.id = element;
     btn.textContent = capitalizeFirstLetter(element);
     btn.classList.add('btn');
+    btn.classList.add('btn-lg');
     btn.classList.add('btn-custom');
     btn.classList.add('m-2');
+    btn.classList.add('handwriting');
     btn.type = 'button';
     btn.id = element;
     btn.addEventListener('click', function() {
