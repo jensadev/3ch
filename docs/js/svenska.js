@@ -5,7 +5,7 @@ let svenska = {
     ],
     "adjective": [
         "en arg",
-        "en gosig"
+        "ett gosigt"
     ],
     "location": [
         "i soffan",
@@ -13,11 +13,13 @@ let svenska = {
     ],
     "object": [
         "get",
-        "monster"
+        "monster",
+        "orm"
     ],
     "object2": [
         "en orm",
-        "en elev"
+        "ett monster",
+        "en get"
     ],
     "structure": [
         "adjective,object,action,object2,location"
