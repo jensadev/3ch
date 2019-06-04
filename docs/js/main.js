@@ -16,7 +16,6 @@ buttons.forEach(element => {
     btn.id = element;
     btn.addEventListener('click', function() {
         let sentence = getSentence(eval(element));
-        console.log(sentence);
         sentencediv.textContent = sentence;
     });
     btndiv.appendChild(btn);
@@ -24,7 +23,6 @@ buttons.forEach(element => {
 
 function getSentence(type)
 {
-    console.log(type);
     let structure = type.structure.toString().split(',');
     let sentence = "";
     structure.forEach(element => {
