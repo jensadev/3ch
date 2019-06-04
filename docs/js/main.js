@@ -1,4 +1,4 @@
-let buttons = ["action", "fantasy", "urban"];
+let buttons = ["action", "fantasy", "urban", "svenska"];
 let btndiv = document.getElementById("btndiv");
 let i = 0;
 let sentencediv = document.getElementById("sentence");
@@ -13,7 +13,7 @@ buttons.forEach(element => {
     btn.type = 'button';
     btn.id = element;
     btn.addEventListener('click', function() {
-        let sentence = getSentence(element);
+        let sentence = getSentence(eval(element));
         console.log(sentence);
         sentencediv.textContent = sentence;
     });
@@ -22,12 +22,11 @@ buttons.forEach(element => {
 
 function getSentence(type)
 {
-    let structure = eval(type).structure.toString().split(',');
-    let first = 0;
+    console.log(type);
+    let structure = type.structure.toString().split(',');
     let sentence = "";
     structure.forEach(element => {
-        //console.log(action[element]);
-        sentence = sentence + action[element][getRandomInt(action[element].length)] + " ";
+        sentence = sentence + type[element][getRandomInt(type[element].length)] + " ";
     });
 
     return capitalizeFirstLetter(sentence).trim() + ".";
